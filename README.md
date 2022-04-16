@@ -1,4 +1,6 @@
-This repository contains the course projects of CS110 (Computer Architecture I) in ShanghaiTech University. Four projects in total.
+# CA I Projects
+
+This repository contains the course projects of CS110 (Computer Architecture I) in ShanghaiTech University.
 
 ## Project 1: RV32I-RVC Bidirectional Translator
 
