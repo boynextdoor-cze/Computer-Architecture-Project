@@ -1,0 +1,11 @@
+.vscode
+output.txt
+**/__pycache__
+*.exe
+translator
+test
+checkComment.py
+Test.c
+Test
+./src/Test.c
+./src/Makefile
