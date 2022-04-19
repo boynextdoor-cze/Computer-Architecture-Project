@@ -1,3 +1,5 @@
+# CA I Projects
+
 This repository contains the course projects of CS110 (Computer Architecture I) in ShanghaiTech University.
 
 All projects are finished by Zeen Chi and Zhongxiao Cong through collaboration in Spring 2022.
