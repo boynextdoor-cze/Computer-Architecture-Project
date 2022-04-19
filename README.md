@@ -1,4 +1,4 @@
-# CA I Projects
+# CS110 (Computer Architecture I) Course Projects
 
 This repository contains the course projects of CS110 (Computer Architecture I) in ShanghaiTech University. All the detailed information can be found on the [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/).
 
