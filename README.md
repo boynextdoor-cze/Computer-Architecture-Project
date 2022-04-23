@@ -1,10 +1,10 @@
 # CS110 (Computer Architecture I) Course Projects
 
-This repository contains the course projects of CS110 (Computer Architecture I) in ShanghaiTech University. All the detailed information can be found on the [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/).
+This repository contains the course projects of CS110 (Computer Architecture I) at ShanghaiTech University. All the detailed information can be found on the [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/).
 
-All projects are finished by Zeen Chi and Zhongxiao Cong through collaboration in Spring 2022.
+All projects are finished by [Zeen Chi](https://github.com/boynextdoor-cze) and [Zhongxiao Cong](https://github.com/Kidrauh) through collaboration in Spring 2022.
 
-**WARNING: You can only utilize our implementations for reference, please DO NOT violate academic integrity of SIST by simply copying our code. We are not responsible for any potential punishment due to your violation.**
+**WARNING: You can only utilize our implementations for reference, please DO NOT violate the academic integrity requirements of SIST by simply copying our code. We are not responsible for any potential punishment due to your academic plagiarism.**
 
 # Project 1: RV32I-RVC Bidirectional Translator
 
@@ -17,4 +17,3 @@ All projects are finished by Zeen Chi and Zhongxiao Cong through collaboration i
 # Project 3:
 
 # Project 4:
-
