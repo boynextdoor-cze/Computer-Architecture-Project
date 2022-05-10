@@ -14,6 +14,8 @@ All projects are finished by [Zeen Chi](https://github.com/boynextdoor-cze) and 
 
 [Introduction to Project 2](https://github.com/boynextdoor-cze/Computer-Architecture-I-Project/tree/master/Project2)
 
-# Project 3:
+# Project 3: Gaussian Blur Optimization
+
+[Introduction to Project 3](https://github.com/boynextdoor-cze/Computer-Architecture-I-Project/tree/master/Project3)
 
 # Project 4:
