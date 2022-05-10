@@ -1,5 +1,7 @@
 # Project 3: Gaussian Blur Optimization
 
+For more details please refer to the [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/projects/3/).
+
 In this project, we hope you can use all knowledge about computer architecture that your have learnt in this course to optimize the Gaussian Blur algorithm.
 
 ## Gaussian Blur

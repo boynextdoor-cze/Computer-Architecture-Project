@@ -1,6 +1,6 @@
 # Project1.1: Translator from RV32I to RVC
 
-For more details please refer to [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/projects/1.1/).
+For more details please refer to the [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/projects/1.1/).
 
 In this part of the project, you will be writing an translator that translates RISC-V instructions to RISC-V compressed instructions. The RISC-V standard compressed instruction set extension (called RVC for shorthand) offers 16-bit versions of common 32-bit RISC-V instructions, thus reducing the binary code size. Note that not all RISC-V instructions can be compressed. RVC scheme offers compression to a 32-bit RISC-V instruction when:
 
@@ -19,7 +19,7 @@ In general, the compression process has the following steps:
 
 # Project1.2: Translator from RVC to RV32I
 
-For more details please refer to [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/projects/1.2/).
+For more details please refer to the [course page](https://robotics.shanghaitech.edu.cn/courses/ca/22s/projects/1.2/).
 
 In project 1.2, you will implement a translator that converts 16-bit RISC-V Compressed (RVC) instructions to equivalent 32-bit RISC-V instructions. Instructions are provided and output in binary form. This project is easy if you gain sufficient understanding of RISC-V from the courses, Lab 3, Lab 4 and its compressed instruction set extension from Project1.1.
 
