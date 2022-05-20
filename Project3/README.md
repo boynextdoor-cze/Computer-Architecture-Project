@@ -30,7 +30,7 @@ The first and the easiest approach is to use multi-threading to optimize this al
 
 ### SIMD instructions
 
-Part of this algorithm is also a good candidate for SIMD instructions. You can also think of changing the input and output of the hash functions to make use of SIMD instructions while keeping the correctness of SHA-256 evaluation.
+Part of this algorithm is also a good candidate for SIMD instructions.
 
 ### Loop unrolling
 
