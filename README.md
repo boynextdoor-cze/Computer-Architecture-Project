@@ -19,3 +19,5 @@ All projects are finished by [Zeen Chi](https://github.com/boynextdoor-cze) and 
 [Introduction to Project 3](https://github.com/boynextdoor-cze/Computer-Architecture-I-Project/tree/master/Project3)
 
 # Project 4:
+
+[Introduction to Project4](Project4/README.md)
