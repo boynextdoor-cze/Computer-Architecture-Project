@@ -1,0 +1,12 @@
+Exercise 2:
+#1 run [arglist]
+#2 break line if expr
+#3 
+n: step over function
+s: step into function
+#4 s
+#5 c
+#6 print param/expr
+#7 display param
+#8 info stack full
+#9 q

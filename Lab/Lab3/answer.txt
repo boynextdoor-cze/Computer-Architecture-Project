@@ -1,0 +1,28 @@
+Ex 1:
+#1
+.data: static data
+.word: Store listed values as unaligned 32-bit words.
+.text: code
+#2
+output=34, the nth term in the Fibonacci sequence
+#3
+0x10000010
+#4
+After entering fib, manually set the value of t3 to 0x0000000D
+
+Ex 2:
+k=t0
+pointer to source=t1
+pointer to dest=t2
+loop:
+	slli t3, t0, 2
+	add t4, t1, t3
+	lw t5, 0(t4)
+	beq t5, x0, exit
+	add t6, t2, t3
+	sw t5, 0(t6)
+	addi t0, t0, 1
+	jal x0, loop
+t3=t0*4
+t4=t1+t3(source base address + offset)
+t6=t2+t3(dest base address + offset)

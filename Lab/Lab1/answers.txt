@@ -1,0 +1,10 @@
+Ex 3:
+6 9 15 9 9
+6 9 F 9 9
+J F
+B: E 9 E 9 E
+N: 9 D B 9
+
+Ex 4:
+1 2 4 8 16 32 64 128 256 489
+The first 9 envelopes serve as 9 bits

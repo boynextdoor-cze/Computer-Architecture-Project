@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.7.2" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.7.2(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="appear" val="center"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </tool>
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="radix" val="16"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="width" val="2"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="value" val="0xff"/>
+      <a name="width" val="8"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#HDL-IP" name="6">
+    <tool name="VHDL Entity">
+      <a name="content">--------------------------------------------------------------------------------
+-- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+library ieee;
+  use ieee.std_logic_1164.all;
+  --use ieee.numeric_std.all;
+
+entity VHDL_Component is
+  port(
+  ------------------------------------------------------------------------------
+  --Insert input ports below
+    horloge_i  : in  std_logic;                    -- input bit example
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example
+  ------------------------------------------------------------------------------
+  --Insert output ports below
+    max_o      : out std_logic;                    -- output bit example
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example
+    );
+end VHDL_Component;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+architecture type_architecture of VHDL_Component is
+
+
+begin
+
+
+end type_architecture;
+</a>
+    </tool>
+  </lib>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+  </lib>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Menu Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(540,50)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(60,400)" name="Clock">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(750,210)" name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(760,80)" name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(770,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="non_pipe_out"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(770,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="pipe_out"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="4" loc="(290,60)" name="ROM">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="contents">addr/data: 8 8
+3 2 fc 1 2 fb 1
+</a>
+    </comp>
+    <comp lib="4" loc="(60,40)" name="Counter">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="Address_Counter"/>
+    </comp>
+    <comp loc="(740,230)" name="pipelined"/>
+    <comp loc="(760,100)" name="non_pipelined"/>
+    <wire from="(250,150)" to="(270,150)"/>
+    <wire from="(270,70)" to="(270,150)"/>
+    <wire from="(270,70)" to="(290,70)"/>
+    <wire from="(30,120)" to="(30,340)"/>
+    <wire from="(30,120)" to="(60,120)"/>
+    <wire from="(30,340)" to="(80,340)"/>
+    <wire from="(530,120)" to="(600,120)"/>
+    <wire from="(540,50)" to="(580,50)"/>
+    <wire from="(580,100)" to="(580,230)"/>
+    <wire from="(580,100)" to="(630,100)"/>
+    <wire from="(580,230)" to="(630,230)"/>
+    <wire from="(580,50)" to="(580,100)"/>
+    <wire from="(60,400)" to="(80,400)"/>
+    <wire from="(600,120)" to="(600,250)"/>
+    <wire from="(600,120)" to="(630,120)"/>
+    <wire from="(600,250)" to="(630,250)"/>
+    <wire from="(620,140)" to="(620,270)"/>
+    <wire from="(620,140)" to="(630,140)"/>
+    <wire from="(620,270)" to="(620,340)"/>
+    <wire from="(620,270)" to="(630,270)"/>
+    <wire from="(740,230)" to="(750,230)"/>
+    <wire from="(750,210)" to="(750,230)"/>
+    <wire from="(750,230)" to="(770,230)"/>
+    <wire from="(760,100)" to="(770,100)"/>
+    <wire from="(760,80)" to="(760,100)"/>
+    <wire from="(80,340)" to="(620,340)"/>
+    <wire from="(80,340)" to="(80,400)"/>
+  </circuit>
+  <circuit name="non_pipelined">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="non_pipelined"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(170,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="in2"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(170,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(170,90)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="in1"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(560,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="out1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="3" loc="(290,120)" name="Multiplier"/>
+    <comp lib="3" loc="(380,130)" name="Adder"/>
+    <comp lib="4" loc="(420,100)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="8" loc="(200,285)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Max clock rate = 8MHz"/>
+    </comp>
+    <comp lib="8" loc="(373,270)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Min clock period=Max CL delay + clk-to-q + setup time = 45+60+10+10=125ns"/>
+    </comp>
+    <wire from="(170,150)" to="(190,150)"/>
+    <wire from="(170,210)" to="(410,210)"/>
+    <wire from="(170,90)" to="(190,90)"/>
+    <wire from="(190,110)" to="(250,110)"/>
+    <wire from="(190,130)" to="(190,150)"/>
+    <wire from="(190,130)" to="(250,130)"/>
+    <wire from="(190,90)" to="(190,110)"/>
+    <wire from="(290,120)" to="(340,120)"/>
+    <wire from="(330,140)" to="(330,230)"/>
+    <wire from="(330,140)" to="(340,140)"/>
+    <wire from="(330,230)" to="(520,230)"/>
+    <wire from="(380,130)" to="(420,130)"/>
+    <wire from="(410,170)" to="(410,210)"/>
+    <wire from="(410,170)" to="(420,170)"/>
+    <wire from="(480,130)" to="(520,130)"/>
+    <wire from="(520,130)" to="(520,230)"/>
+    <wire from="(520,130)" to="(560,130)"/>
+  </circuit>
+  <circuit name="pipelined">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="pipelined"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(170,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="in2"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(170,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(170,90)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="in1"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(560,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="out1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="3" loc="(240,110)" name="Multiplier"/>
+    <comp lib="3" loc="(420,120)" name="Adder"/>
+    <comp lib="4" loc="(280,80)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(460,100)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="8" loc="(229,286)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Max clock rate = 12.5MHz"/>
+    </comp>
+    <comp lib="8" loc="(373,269)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Min clock period=Max CL delay + clk-to-q + setup time = 60+10+10=80ns"/>
+    </comp>
+    <wire from="(170,150)" to="(180,150)"/>
+    <wire from="(170,210)" to="(270,210)"/>
+    <wire from="(170,90)" to="(180,90)"/>
+    <wire from="(180,100)" to="(200,100)"/>
+    <wire from="(180,120)" to="(180,150)"/>
+    <wire from="(180,120)" to="(200,120)"/>
+    <wire from="(180,90)" to="(180,100)"/>
+    <wire from="(240,110)" to="(280,110)"/>
+    <wire from="(270,150)" to="(270,210)"/>
+    <wire from="(270,150)" to="(280,150)"/>
+    <wire from="(270,210)" to="(410,210)"/>
+    <wire from="(340,110)" to="(380,110)"/>
+    <wire from="(360,130)" to="(360,240)"/>
+    <wire from="(360,130)" to="(380,130)"/>
+    <wire from="(360,240)" to="(540,240)"/>
+    <wire from="(410,170)" to="(410,210)"/>
+    <wire from="(410,170)" to="(460,170)"/>
+    <wire from="(420,120)" to="(450,120)"/>
+    <wire from="(450,120)" to="(450,130)"/>
+    <wire from="(450,130)" to="(460,130)"/>
+    <wire from="(520,130)" to="(540,130)"/>
+    <wire from="(540,130)" to="(540,240)"/>
+    <wire from="(540,130)" to="(560,130)"/>
+  </circuit>
+</project>

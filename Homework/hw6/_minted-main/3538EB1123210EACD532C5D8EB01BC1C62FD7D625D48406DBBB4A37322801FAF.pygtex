@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{log\PYGZus{}entry\PYGZus{}useful}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{src\PYGZus{}ip}\PYG{p}{;}\PYG{+w}{    }\PYG{c+cm}{/* Remote IP address */}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{status}\PYG{p}{;}\PYG{+w}{ }\PYG{c+cm}{/* HTTP response status code. (e.g. 404) */}
+\PYG{+w}{    }\PYG{k+kt}{long}\PYG{+w}{ }\PYG{n}{reference\PYGZus{}time}\PYG{p}{;}\PYG{+w}{ }\PYG{c+cm}{/* The time user referenced to our website. */}
+\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{n}{log}\PYG{p}{[}\PYG{n}{NUM\PYGZus{}ENTRIES}\PYG{p}{];}
+\end{Verbatim}

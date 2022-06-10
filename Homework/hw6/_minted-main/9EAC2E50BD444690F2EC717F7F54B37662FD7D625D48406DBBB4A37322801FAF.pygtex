@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{log\PYGZus{}entry}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{src\PYGZus{}ip}\PYG{p}{;}\PYG{+w}{    }\PYG{c+cm}{/* Remote IP address */}
+\PYG{+w}{        }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{n}{URL}\PYG{p}{[}\PYG{l+m+mi}{128}\PYG{p}{];}\PYG{+w}{ }\PYG{c+cm}{/* Request URL. You can consider 128 characters are enough. */}
+\PYG{+w}{        }\PYG{c+c1}{// 4\PYGZhy{}bytes padding}
+\PYG{+w}{        }\PYG{k+kt}{long}\PYG{+w}{ }\PYG{n}{reference\PYGZus{}time}\PYG{p}{;}\PYG{+w}{ }\PYG{c+cm}{/* The time user referenced to our website. */}
+\PYG{+w}{        }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{n}{browser}\PYG{p}{[}\PYG{l+m+mi}{64}\PYG{p}{];}\PYG{+w}{ }\PYG{c+cm}{/* Client browser name */}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{status}\PYG{p}{;}\PYG{+w}{ }\PYG{c+cm}{/* HTTP response status code. (e.g. 404) */}
+\PYG{+w}{        }\PYG{c+c1}{// 4\PYGZhy{}bytes padding}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{n}{log}\PYG{p}{[}\PYG{n}{NUM\PYGZus{}ENTRIES}\PYG{p}{];}
+\end{Verbatim}

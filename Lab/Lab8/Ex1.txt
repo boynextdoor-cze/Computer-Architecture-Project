@@ -1,0 +1,41 @@
+Exe1:
+Scenario 1:
+    Associativity: 1 (Venus won't let you change this, why?): Direct Mapped
+    Cache Size (Bytes): 32 (Why?): 1x4x8
+1.Block Size (Bytes):8 ; Number of blocks:4 ;Step Size:8 ;Associativity:1
+判断每次撞到哪个set: ((0+Stepsize*k)/(block size/4))%(Number of blocks/Associativity)
+2.no change 每次都选中set0,每次都不hit,每次循环最后在cache里的都是最后一个值，下一个循环开始无法access第一个值
+3.Step Size: 1
+
+Scenario 2:
+--------------------------------------------
+64words, each time+2, each block 4 words,4 sets 4 ways
+  set0:  
+  set1: 
+  set2: 
+  set3:
+------------------------------------------
+1.Block Size (Bytes):16 ;Number of blocks:16 ;Associativity:4 ;Step Size:2
+判断每次撞到哪个set: ((0+Stepsize*k)/(block size/4))%(Number of blocks/Associativity)
+2.1 因为只有前16次compulsory miss,之后每次都hit
+3.
+
+Scenario 3:
+--------------------------------------------
+64words, each time+8,1,9,17,25,33,41,49,57
+  set0:  1	17(33)(49)
+	17 
+	33	1(33)(49)
+	49
+  set1: 
+	
+  set2:  9	9
+	25	57
+	41	25
+	57	41
+  set3:
+------------------------------------------
+1.range:0-0.5
+Explanation: 0:每一次都选中上一个block; 0.5:前8次compulsory miss,分别放到8个cache;之后8次每次hit
+2.LRU--every time choose the least used i.e.the empty block
+  0.5:前8次compulsory miss,分别放到8个cache;之后8次每次hit
